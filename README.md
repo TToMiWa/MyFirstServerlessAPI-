@@ -24,6 +24,7 @@ Client -> API Gateway -> Lambda Function -> DynamoDB
 
 ### 1. Create the DynamoDB Table
 - Create a DynamoDB table named `YourTableName` with `id` as the partition key.
+- dynamodb table creation.png
 
 ### 2. Create the Lambda Function
 1. Write the Lambda function code (e.g., `LambdaFunctionOverHttps.py`).
@@ -97,10 +98,4 @@ curl https://your-api-url/test -d '{"operation": "read", "payload": {"Key": {"id
 2. Use the `Invoke URL` for CRUD operations via `curl` or a REST client (e.g., Postman).
 3. Ensure proper IAM permissions for long-term use.
 
-## Future Improvements
-- Add error handling to the Lambda function.
-- Use Terraform or AWS SAM for infrastructure automation.
-- Implement authentication in API Gateway.
 
-## License
-This project is licensed under the MIT License.
