@@ -24,7 +24,7 @@ Client -> API Gateway -> Lambda Function -> DynamoDB
 
 ### 1. Create the DynamoDB Table
 - Create a DynamoDB table named `YourTableName` with `id` as the partition key.
-- dynamodb table creation.png
+-  ![dynamodb table creation] (images/dynamodb table creation.png)
 
 ### 2. Create the Lambda Function
 1. Write the Lambda function code (e.g., `LambdaFunctionOverHttps.py`).
